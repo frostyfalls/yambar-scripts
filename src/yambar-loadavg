@@ -1,0 +1,16 @@
+#!/bin/sh
+
+set -eu
+
+interval="${1:-1}"
+
+while :; do
+    read -r one five fifteen _ </proc/loadavg
+
+    echo "one|float|$one"
+    echo "five|float|$five"
+    echo "fifteen|float|$fifteen"
+    echo
+
+    sleep "$interval"
+done
