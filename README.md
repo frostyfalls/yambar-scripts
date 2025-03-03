@@ -2,7 +2,9 @@
 
 This is a collection of module scripts for [Yambar](https://codeberg.org/dnkl/yambar).
 
-## loadavg
+## Modules
+
+### loadavg
 
 This fetches the system's load average.
 
